@@ -1,0 +1,5 @@
+collections:
+  #- dellemc.powerstore
+  - community.general
+    #- community.vmware
+  - nutanix.ncp 
