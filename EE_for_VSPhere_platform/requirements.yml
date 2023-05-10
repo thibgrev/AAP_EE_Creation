@@ -1,0 +1,3 @@
+collections:
+  - community.general
+  - vmware.vmware_rest
