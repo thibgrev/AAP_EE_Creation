@@ -1,5 +1,5 @@
-ARG EE_BASE_IMAGE="registry.redhat.io/ansible-automation-platform-23/ee-29-rhel8"
-ARG EE_BUILDER_IMAGE="registry.redhat.io/ansible-automation-platform-23/ansible-builder-rhel8"
+ARG EE_BASE_IMAGE="registry.redhat.io/ansible-automation-platform-20-early-access/ee-minimal-rhel8"
+ARG EE_BUILDER_IMAGE="quay.io/ansible/ansible-builder:latest"
 ARG PYCMD="/usr/bin/python3"
 
 # Base build stage
@@ -19,6 +19,8 @@ ARG EE_BUILDER_IMAGE
 ARG PYCMD
 
 RUN /output/scripts/check_galaxy
+COPY _build/ansible.cfg ~/.ansible.cfg
+
 COPY _build /build
 WORKDIR /build
 
@@ -35,9 +37,7 @@ RUN $PYCMD -m pip install --no-cache-dir bindep pyyaml requirements-parser
 
 COPY --from=galaxy /usr/share/ansible /usr/share/ansible
 
-COPY _build/requirements.txt requirements.txt
-COPY _build/bindep.txt bindep.txt
-RUN $PYCMD /output/scripts/introspect.py introspect --sanitize --user-pip=requirements.txt --user-bindep=bindep.txt --write-bindep=/tmp/src/bindep.txt --write-pip=/tmp/src/requirements.txt
+RUN $PYCMD /output/scripts/introspect.py introspect --sanitize --write-bindep=/tmp/src/bindep.txt --write-pip=/tmp/src/requirements.txt
 RUN /output/scripts/assemble
 
 # Final build stage
