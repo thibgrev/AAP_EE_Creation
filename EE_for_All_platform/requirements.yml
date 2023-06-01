@@ -1,0 +1,112 @@
+collections:
+  - community.general
+  - nutanix.ncp 
+  - amazon.awx
+  - ansible.netcommon
+  - ansible.posix
+  - ansible.utils
+  - ansible.windows
+  - arista.eos
+  - awx.awx
+  - azure.azcollection
+  - check_point.mgmt
+  - chocolatey.chocolatey
+  - cisco.aci
+  - cisco.asa
+  - cisco.dnac
+  - cisco.intersight
+  - cisco.ios
+  - cisco.iosxr
+  - cisco.ise
+  - cisco.meraki
+  - cisco.mso
+  - cisco.nso
+  - cisco.nxos
+  - cisco.ucs
+  - cloud.common
+  - cloudscale_ch.cloud
+  - community.aws
+  - community.azure
+  - 
+community.ciscosmb            1.0.5
+community.crypto              2.10.0
+community.digitalocean        1.23.0
+community.dns                 2.5.0
+community.docker              3.4.0
+community.fortios             1.0.0
+community.general             6.3.0
+community.google              1.0.0
+community.grafana             1.5.3
+community.hashi_vault         4.1.0
+community.hrobot              1.7.0
+community.libvirt             1.2.0
+community.mongodb             1.4.2
+community.mysql               3.5.1
+community.network             5.0.0
+community.okd                 2.2.0
+community.postgresql          2.3.2
+community.proxysql            1.5.1
+community.rabbitmq            1.2.3
+community.routeros            2.7.0
+community.sap                 1.0.0
+community.sap_libs            1.4.0
+community.skydive             1.0.0
+community.sops                1.6.0
+community.vmware              3.3.0
+community.windows             1.12.0
+community.zabbix
+containers.podman
+cyberark.conjur
+cyberark.pas
+dellemc.enterprise_sonic
+dellemc.openmanage
+dellemc.os10
+dellemc.os6
+dellemc.os9
+dellemc.powerflex
+dellemc.unity
+f5networks.f5_modules
+fortinet.fortimanager
+fortinet.fortios
+frr.frr
+gluster.gluster
+google.cloud
+grafana.grafana
+hetzner.hcloud
+hpe.nimble
+ibm.qradar
+ibm.spectrum_virtualize
+infinidat.infinibox
+infoblox.nios_modules
+inspur.ispim
+inspur.sm
+junipernetworks.junos
+kubernetes.core
+lowlydba.sqlserver
+mellanox.onyx
+netapp.aws
+netapp.azure
+netapp.cloudmanager
+netapp.elementsw
+netapp.ontap
+netapp.storagegrid
+netapp.um_info
+netapp_eseries
+netbox.netbox
+ngine_io.cloudstack
+ngine_io.exoscale
+ngine_io.vultr
+openstack.cloud
+openvswitch.openvswitch
+ovirt.ovirt
+purestorage.flasharray
+purestorage.flashblade
+purestorage.fusion
+sensu.sensu_go
+splunk.es
+t_systems_mms.icinga_director
+theforeman.foreman
+vmware.vmware_rst
+vultr.cloud
+vyos.vyos
+wti.remote
