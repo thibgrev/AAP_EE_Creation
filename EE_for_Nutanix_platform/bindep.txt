@@ -1,3 +1,6 @@
 rsync
 git
 zsh
+vi
+tree
+mlocate

@@ -1,5 +1,1 @@
-ansible-core==2.12
-PyPowerStore==1.10.0
-vi
-git
-
+ansible-core==2.13.3

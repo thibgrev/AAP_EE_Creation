@@ -1,0 +1,6 @@
+collections:
+  - ansible.netcommon
+  - ansible.posix
+  - ansible.utils
+  - ansible.windows
+  - community.windows
