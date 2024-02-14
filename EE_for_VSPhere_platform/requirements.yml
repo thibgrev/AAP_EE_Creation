@@ -1,3 +1,11 @@
 collections:
   #- community.general
-  - vmware.vmware_rest
+  - name: community.general
+    #source: https://galaxy.ansible.com
+    source: https://old-galaxy.ansible.com/
+  - name: community.vmware
+    #source: https://galaxy.ansible.com
+    source: https://old-galaxy.ansible.com/
+  - name: ansible.windows
+    source: https://old-galaxy.ansible.com/
+  - name: vmware.vmware_rest
