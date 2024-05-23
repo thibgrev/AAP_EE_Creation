@@ -1,56 +1,12 @@
 collections:
-  - nutanix.ncp 
-  - ansible.netcommon
-  - ansible.posix
-  - ansible.utils
-  - ansible.windows
-  - community.dns
-  - community.docker
-  - community.general
-  - community.google
-  - community.grafana
-  - community.hashi_vault
-  - community.mongodb
-  - community.mysql
-  - community.network
-  - community.okd
-  - community.postgresql
-  - community.rabbitmq
-  - community.vmware
-  - community.windows
-  - community.zabbix
-  - containers.podman
-  - cyberark.conjur
-  - cyberark.pas
-  - dellemc.enterprise_sonic
-  - dellemc.openmanage
-  - dellemc.os10
-  - dellemc.os6
-  - dellemc.os9
-  - dellemc.powerflex
-  - dellemc.unity
-  - gluster.gluster
-  - google.cloud
-  - grafana.grafana
-  - hpe.nimble
-  - ibm.qradar
-  - ibm.spectrum_virtualize
-  - kubernetes.core
-  - netapp.aws
-  - netapp.azure
-  - netapp.cloudmanager
-  - netapp.elementsw
-  - netapp.ontap
-  - netapp.storagegrid
-  - netapp.um_info
-  - netapp_eseries.santricity
-  - netbox.netbox
-  - openstack.cloud
-  - openvswitch.openvswitch
-  - ovirt.ovirt
-  - purestorage.flasharray
-  - purestorage.flashblade
-  - purestorage.fusion
-  - splunk.es
-  - theforeman.foreman
-  - vmware.vmware_rest
+  - name: ansible.windows
+    source: https://old-galaxy.ansible.com/
+  - name: community.windows
+    source: https://old-galaxy.ansible.com/
+  - name: community.general
+    source: https://old-galaxy.ansible.com/
+  - name: community.vmware
+    source: https://old-galaxy.ansible.com/
+  - name: ansible.windows
+    source: https://old-galaxy.ansible.com/
+  - name: vmware.vmware_rest
